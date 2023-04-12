@@ -13,7 +13,7 @@ data "aws_ami" "app_ami" {
 
   owners = ["979382823631"] # Bitnami
 }
-resource "aws_instance" "weblogic" {
+resource "aws_instance" "logggic" {
   ami           = data.aws_ami.app_ami.id
   instance_type = var.instance_type
 
